@@ -4,9 +4,9 @@
   --primary: #333;
   --dark: #111;
   --accent: #1e88e5;
-  --grey-dark: #666;
-  --grey-mid: #999;
-  --grey-white: #e2e2e2;
+  --gray-dark: #666;
+  --gray-mid: #999;
+  --gray-light: #e2e2e2;
   --bg-color: #f6f6f6;
 }
 
@@ -47,6 +47,100 @@ a:hover {
   background: url("../images/minidaum_v5.png") no-repeat 0 0;
 }
 
-.top_menu a {
+.top_menu {
   display: flex;
+  align-items: center;
+}
+
+.top_menu a {
+  text-indent: -9999px;
+  width: 24px;
+  height: 24px;
+  /* background: red; */
+  margin: 0 12px;
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--gray-dark);
+}
+
+.top_menu a:nth-child(1) {
+  width: 52px;
+  border: 1px solid var(--gray-mid);
+  border-radius: 2px;
+  box-sizing: border-box;
+  text-indent: 0;
+  text-align: center;
+  line-height: 22px;
+}
+
+.top_menu a:nth-child(2) {
+  background: url("../images/minidaum_v5.png") no-repeat 0 -20px;
+}
+
+.top_menu a:nth-child(2):hover {
+  background: url("../images/minidaum_v5.png") no-repeat -60px -20px;
+}
+
+.top_menu a:nth-child(3) {
+  background: url("../images/minidaum_v5.png") no-repeat -30px -20px;
+  margin-right: 0;
+}
+
+.top_menu a:nth-child(3):hover {
+  background: url("../images/minidaum_v5.png") no-repeat -90px -20px;
+}
+
+/* content */
+
+/* .content {
+} */
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+}
+
+.title,
+.title > ul {
+  display: flex;
+}
+
+/* nav */
+nav {
+  border-top: 1px solid var(--gray-light);
+  border-bottom: 1px solid var(--gray-light);
+}
+
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav a {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  /* background: red; */
+}
+
+.nav {
+  display: flex;
+  float: left;
+}
+
+.nav a {
+  padding: 0 13px;
+}
+
+.nav_extra {
+  display: flex;
+  float: right;
+}
+
+.nav_extra a {
+  padding: 0 8px;
 }
