@@ -187,6 +187,7 @@ nav a {
   display: block;
   height: 70px;
   line-height: 70px;
+  font-weight: 500;
 }
 
 .nav {
@@ -202,11 +203,17 @@ nav a {
 .nav a::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  bottom: 0;
+  left: 15%;
+  right: 15%;
+  width: 70%;
   height: 2px;
   background: var(--accent);
+  transition: width 0.3s;
+}
+
+.nav a :hover ::after {
+  width: 70%;
 }
 
 .nav_extra {
